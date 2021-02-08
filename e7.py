@@ -19,7 +19,7 @@ def criba(limite):
   if cnt < 10001:
     return cnt
   else:
-    print("El número:", nmb-1, "es el primo número:", cnt)
+    print("El número", nmb-1, "es el primo número", cnt)
     return cnt
     
     
