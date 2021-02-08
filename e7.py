@@ -1,5 +1,6 @@
 import math
 
+
 def criba(limite):
   cnt = 0
   nmb = 0
@@ -13,14 +14,18 @@ def criba(limite):
     if v == 1:
       cnt = cnt+1
     nmb = nmb+1
+    if cnt == 10001:
+      break
   if cnt < 10001:
     return cnt
   else:
     print("El número:", nmb-1, "es el primo número:", cnt)
     return cnt
     
-limite = 104700
+    
+limite = 10000
 
 while criba(limite)<10001:
-  limite = limite+1
+  limite = limite+5000
+  print(limite)
 
