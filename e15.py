@@ -4,10 +4,10 @@
 endpoint = [20, 20]
 
 def factorial(num):
-  factorial = 1
-  for n in range(num, 0, -1):
-    factorial *= n
-  return factorial
+  if num == 1:
+    return 1
+  return num*factorial(num-1)
+
 
 def pathcount(endpoint):
   num = factorial(endpoint[0]+endpoint[1])
